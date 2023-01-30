@@ -7,13 +7,44 @@
 * Don't forget to add all props in the interface file!
 */
 
-import * as React from "react"
 import "../styles/App.css"
+import React, { useEffect, useState } from 'react';
 
 /**
  * Describe the new component here...
  */
 export const Header = () => {
+    const [currentAccount, setCurrentAccount] = useState("");
+    const connectWallet = async () => {
+      try {
+        const { ethereum } = window;
+        if (!ethereum) {
+          alert("Install metamask please");
+          return;
+        }
+        const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+        setCurrentAccount(accounts[0]);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    const disconnectWallet = async () => {
+        try {
+          const { ethereum } = window;
+          if (!ethereum) {
+            alert("get metamask plz");
+            return;
+          }
+          setCurrentAccount("");
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      useEffect(() => {
+        connectWallet();
+      }, [])
 
     return (
         <header>
@@ -31,6 +62,16 @@ export const Header = () => {
                 </div>
                 <div className={'headerSection'}>
                     <div style={{ flexDirection: 'row' }}>
+                    {currentAccount && (
+                        <button onClick={disconnectWallet}>
+                            🦊 Disconnect {currentAccount.substring(0,6)}...
+                        </button>
+                        )}
+                        {!currentAccount && (
+                        <button onClick={connectWallet}>
+                            🦊 Connect Metamask Wallet
+                        </button>
+                        )}
                         {/* <a href={'https://apps.apple.com/us/app/stem-tech-network/id1612728604'}> */}
                         <img src={require('../assets/download-on-apple-apple-store-stem-tech-network.png')} className="App-logo" alt="logo" />
                         {/* </a> */}

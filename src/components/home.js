@@ -13,9 +13,6 @@ import { Footer } from "./footer";
 import { Header } from "./header";
 import { MainContext } from "../contexts/main-context";
 
-/**
- * Describe the new component here...
- */
 export const Home = () => {
     const [isFormSubmitted, setIsFormSubmitted] = useState(false)
     const [firstName, setFirstName] = useState('')
