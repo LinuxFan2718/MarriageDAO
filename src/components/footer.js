@@ -33,7 +33,7 @@ export const Footer = () => {
                     </a>
                 </p>
                 <p style={{ color: '#ffffff99' }}>
-                    <a href={'https://www.miamihackweek.com/'} style={{ color: '#f7e2ad99' }}>
+                    <a href={'https://www.miamihackweek.com/'} style={{ color: '#ff69b4' }}>
                         {"Miami Hack Week"}
                     </a>
                     {" 🌴"}

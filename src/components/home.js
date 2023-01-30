@@ -44,7 +44,7 @@ export const Home = () => {
                             <p style={{ color: "#ffffff", fontSize: 16 }}>Sign Up for Our Email List</p>
                             <br />
                             <input
-                                placeholder="👤 First Name"
+                                placeholder="👤 Name"
                                 type={'text'}
                                 value={firstName || ''}
                                 onChange={(e) => setFirstName(e.target.value)}
