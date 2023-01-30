@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/App.css"
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import { PrivacyPolicy } from "./components/privacy-policy.js";
+import { Home } from "./components/home.js";
+import { MainProvider } from "./contexts/main-context";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Marriage DAO coming soon to your state!
-        </p>
-        <a
-          className="App-link"
-          href="https://www.daohouse.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Built at DAO House
-        </a>
-      </header>
-    </div>
+    <MainProvider>
+      <Router>
+        <Routes>
+          <Route path={"/"} element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Routes >
+      </Router >
+    </MainProvider>
   );
 }
 
