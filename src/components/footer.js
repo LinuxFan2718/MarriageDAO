@@ -17,12 +17,12 @@ export const Footer = () => {
         <footer>
             <div className={'footerSection'}>
                 <div style={{ flexDirection: 'row' }}>
-                    {/* <a href={'https://apps.apple.com/us/app/stem-tech-network/id1612728604'}> */}
+                    <a href={'https://github.com/Zernach/marriage-dao-mobile'}>
                     <img src={require('../assets/download-on-apple-apple-store-stem-tech-network.png')} className="App-logo-footer" alt="logo" />
-                    {/* </a> */}
-                    {/* <a href={'https://play.google.com/store/apps/details?id=com.zernach.stem'}> */}
+                    </a>
+                    <a href={'https://github.com/Zernach/marriage-dao-mobile'}>
                     <img src={require('../assets/get-it-on-google-playstore-app-stem-tech-network.png')} className="App-logo-footer" alt="logo" />
-                    {/* </a> */}
+                    </a>
                 </div>
             </div>
             <div style={{ paddingTop: 2, paddingBottom: 5 }}>
