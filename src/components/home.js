@@ -34,7 +34,9 @@ export const Home = () => {
                     frameborder="0"
                 ></iframe>
             </div>
-            <img className="gif" src={'https://github.com/Zernach/zernach.github.io/blob/master/images/marriage-dao-demo-gif-expo-react-native-walletconnect.gif?raw=true'} alt={'marriageDAO'} style={{ marginBottom: '5%', marginTop: 0 }} />
+            <a href={'https://github.com/Zernach/marriage-dao-mobile'}>
+                <img className="gif" src={'https://github.com/Zernach/zernach.github.io/blob/master/images/marriage-dao-demo-gif-expo-react-native-walletconnect.gif?raw=true'} alt={'marriageDAO'} style={{ marginBottom: '5%', marginTop: 0 }} />
+            </a>
             <Footer />
         </div>
     );
