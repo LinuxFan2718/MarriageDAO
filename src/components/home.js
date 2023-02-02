@@ -27,7 +27,7 @@ export const Home = () => {
             <div className={'screenBody'}>
                 <iframe
                     title='nft'
-                    src="https://gateway.ipfscdn.io/ipfs/QmbqEq5EQLx1aPurZFreM246fsKeawfpKDT8uzguAHAikr/erc1155.html?contract=0x38ccD5B179Db21e8C896704cb019af3AF9Eeb89F&chainId=137&tokenId=0"
+                    src="https://gateway.ipfscdn.io/ipfs/QmbqEq5EQLx1aPurZFreM246fsKeawfpKDT8uzguAHAikr/erc1155.html?contract=0x38ccD5B179Db21e8C896704cb019af3AF9Eeb89F&chainId=137&tokenId=0&primaryColor=pink"
                     width='90%'
                     height="600px"
                     style={{ maxWidth: '100%', marginTop: '5%' }}
