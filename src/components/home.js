@@ -7,18 +7,16 @@
 * Don't forget to add all props in the interface file!
 */
 
-import React, { useContext, useState } from "react"
+import React, { useState } from "react"
 import "../styles/App.css"
 import { Footer } from "./footer";
 import { Header } from "./header";
-import { MainContext } from "../contexts/main-context";
 
 export const Home = () => {
-    const [isFormSubmitted, setIsFormSubmitted] = useState(false)
+    const [isFormSubmitted] = useState(false)
     const [firstName, setFirstName] = useState('')
     const [email, setEmail] = useState('')
     const [city, setCity] = useState('')
-    const { insertMailerMutation } = useContext(MainContext)
 
     const onSubmit = (data) => {
     };
@@ -27,6 +25,14 @@ export const Home = () => {
         <div className={"App"}>
             <Header />
             <div className={'screenBody'}>
+                <iframe
+                    title='nft'
+                    src="https://gateway.ipfscdn.io/ipfs/QmbqEq5EQLx1aPurZFreM246fsKeawfpKDT8uzguAHAikr/erc1155.html?contract=0x38ccD5B179Db21e8C896704cb019af3AF9Eeb89F&chainId=137&tokenId=0"
+                    width="600px"
+                    height="600px"
+                    style={{maxWidth: '100%'}}
+                    frameborder="0"
+                ></iframe>
                 <form onSubmit={(event) => { event.preventDefault(); onSubmit(event.data) }} style={{ marginTop: '10%', marginRight: '5%', marginLeft: '5%' }}>
                     {isFormSubmitted ?
                         <>
@@ -69,6 +75,7 @@ export const Home = () => {
                     <div style={{ padding: 5, borderRadius: 10, marginLeft: '10vw', marginRight: '10vw' }}>
                     </div>
                 </div> */}
+
             </div>
             <Footer />
         </div>
