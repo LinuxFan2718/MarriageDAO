@@ -228,6 +228,19 @@ button:hover {
   background-color: #ff55ac;
 }
 
+.gif {
+  width: 90%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+@media (min-width:640px) {
+  .gif {
+    width: 600px;
+  }
+}
+
 input[type=submit] {
   background-color: #f7e2ad99;
   border: none;
