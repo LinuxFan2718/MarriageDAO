@@ -16,35 +16,35 @@ import React, { useEffect, useState } from 'react';
 export const Header = () => {
     const [currentAccount, setCurrentAccount] = useState("");
     const connectWallet = async () => {
-      try {
-        const { ethereum } = window;
-        if (!ethereum) {
-          alert("Install metamask please");
-          return;
+        try {
+            const { ethereum } = window;
+            if (!ethereum) {
+                alert("Install metamask please");
+                return;
+            }
+            const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+            setCurrentAccount(accounts[0]);
+        } catch (error) {
+            console.error(error);
         }
-        const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-        setCurrentAccount(accounts[0]);
-      } catch (error) {
-        console.error(error);
-      }
     }
 
     const disconnectWallet = async () => {
         try {
-          const { ethereum } = window;
-          if (!ethereum) {
-            alert("get metamask plz");
-            return;
-          }
-          setCurrentAccount("");
+            const { ethereum } = window;
+            if (!ethereum) {
+                alert("get metamask plz");
+                return;
+            }
+            setCurrentAccount("");
         } catch (error) {
-          console.error(error);
+            console.error(error);
         }
-      }
+    }
 
-      useEffect(() => {
+    useEffect(() => {
         connectWallet();
-      }, [])
+    }, [])
 
     return (
         <header>
@@ -62,22 +62,22 @@ export const Header = () => {
                 </div>
                 <div className={'headerSection'}>
                     <div style={{ flexDirection: 'row' }}>
-                    {currentAccount && (
-                        <button onClick={disconnectWallet}>
-                            🦊 Disconnect {currentAccount.substring(0,6)}...
-                        </button>
+                        {currentAccount && (
+                            <button onClick={disconnectWallet}>
+                                🦊 Disconnect {currentAccount.substring(0, 6)}...
+                            </button>
                         )}
                         {!currentAccount && (
-                        <button onClick={connectWallet}>
-                            🦊 Connect Metamask Wallet
-                        </button>
+                            <button onClick={connectWallet}>
+                                🦊 Connect Metamask Wallet
+                            </button>
                         )}
-                        {/* <a href={'https://apps.apple.com/us/app/stem-tech-network/id1612728604'}> */}
-                        <img src={require('../assets/download-on-apple-apple-store-stem-tech-network.png')} className="App-logo" alt="logo" />
-                        {/* </a> */}
-                        {/* <a href={'https://play.google.com/store/apps/details?id=com.zernach.stem'}> */}
-                        <img src={require('../assets/get-it-on-google-playstore-app-stem-tech-network.png')} className="App-logo" alt="logo" />
-                        {/* </a> */}
+                        {/* <a href={'https://apps.apple.com/us/app/stem-tech-network/id1612728604'}>
+                            <img src={require('../assets/download-on-apple-apple-store-stem-tech-network.png')} className="App-logo" alt="logo" />
+                        </a>
+                        <a href={'https://play.google.com/store/apps/details?id=com.zernach.stem'}>
+                            <img src={require('../assets/get-it-on-google-playstore-app-stem-tech-network.png')} className="App-logo" alt="logo" />
+                        </a> */}
                     </div>
                 </div>
             </div>

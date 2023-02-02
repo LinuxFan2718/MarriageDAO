@@ -22,6 +22,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -222,6 +223,11 @@ input[type="submit"]:hover {
   background-color: #ff55ac;
 }
 
+/* Submit button hover */
+button:hover {
+  background-color: #ff55ac;
+}
+
 input[type=submit] {
   background-color: #f7e2ad99;
   border: none;
@@ -244,12 +250,12 @@ button {
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
-  background-color: rgba(0, 170, 159, 1);
+  background-color: rgba(247, 226, 173, 0.60);
   background-image: linear-gradient(to top left,
-                                    rgba(0, 0, 0, .2),
-                                    rgba(0, 0, 0, .2) 30%,
-                                    rgba(0, 0, 0, 0));
+      rgba(0, 0, 0, .2),
+      rgba(0, 0, 0, .2) 30%,
+      rgba(0, 0, 0, 0));
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-              inset -2px -2px 3px rgba(0, 0, 0, .6);
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
 
 }
