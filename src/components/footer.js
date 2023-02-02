@@ -27,7 +27,17 @@ export const Footer = () => {
             </div>
             <div style={{ paddingTop: 2, paddingBottom: 5 }}>
                 <p style={{ color: '#ffffff99' }}>
-                    {'Brought to You by '}
+                    <a href={'https://github.com/Zernach/marriage-dao-mobile'} style={{ color: '#f7e2ad99' }}>
+                        {"Mobile App Github Repo"}
+                    </a>
+                </p>
+                <p style={{ color: '#ffffff99' }}>
+                    <a href={'https://github.com/LinuxFan2718/MarriageDAO'} style={{ color: '#f7e2ad99' }}>
+                        {"Web Github Repo"}
+                    </a>
+                </p>
+                <p style={{ color: '#ffffff99' }}>
+                    {'Built by '}
                     <a href={'https://www.daohouse.org/'} style={{ color: '#f7e2ad99' }}>
                         {"DAO House"}
                     </a>
@@ -37,12 +47,6 @@ export const Footer = () => {
                         {"Miami Hack Week"}
                     </a>
                     {" 🌴"}
-                </p>
-                <p style={{ color: '#ffffff99' }}>
-                    {'All Rights Reserved 2023 © '}
-                    <a href={'/privacy-policy'} style={{ color: '#f7e2ad99' }}>
-                        {" Privacy Policy"}
-                    </a>
                 </p>
             </div>
         </footer>

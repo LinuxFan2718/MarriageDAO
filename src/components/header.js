@@ -25,7 +25,8 @@ export const Header = () => {
                 <div className={'headerSection'}>
                     <img src={require('../assets/stem_icons_dark.png')} className="app-icon" alt="app-icon" style={{}} />
                 </div>
-
+                <div className={'headerSection'}>
+                </div>
             </div>
         </header>
     );
