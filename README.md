@@ -2,7 +2,7 @@
 ## PROJECT NAME: Marriage DAO
 ### SUBMITTED BY: DAO House
 
-This repository contains the React website code for Marriage DAO. It is a website that allows users to connect their preferred web3 wallet to create a marriage contract to be stored on the "Polygon MainNet" Etherium blockchain network.
+This repository contains the React website code for Marriage DAO. It is a website that allows users to connect their preferred web3 wallet to create a marriage contract to be stored on the "Polygon MainNet" Etherium blockchain network through ThirdWeb's interface.
 
 <img className="gif" src='./src/assets/react-walletconnect-marriage-dao-miami-hack-week.png'/>
 <br/>
