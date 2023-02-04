@@ -16,7 +16,7 @@ export const Header = () => {
             <div className="flexed" style={{ justifyContent: 'space-evenly', alignItems: 'center' }}>
                 <div className={'headerSection'}>
                     <h1 className="webTitle" style={{ color: '#f7e2ad' }} >
-                        {"MARRIAGE DAO"}
+                        {"MARRIAGE DAO 💍"}
                     </h1>
                     <h3 className="subtitle" style={{ color: '#ffffff' }}>
                         <i>{'Make Your Marriage Official on the Blockchain'}</i>

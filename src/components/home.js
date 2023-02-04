@@ -34,9 +34,16 @@ export const Home = () => {
                     frameborder="0"
                 ></iframe>
             </div>
-            <a href={'https://github.com/Zernach/marriage-dao-mobile'}>
-                <img className="gif" src={'https://github.com/Zernach/zernach.github.io/blob/master/images/marriage-dao-demo-gif-expo-react-native-walletconnect.gif?raw=true'} alt={'marriageDAO'} style={{ marginBottom: '5%', marginTop: 0 }} />
-            </a>
+            <div style={{ flexDirection: 'row', columnCount: 2 }}>
+                <div>
+                    <iframe width='90%' height='600' src="https://www.youtube.com/embed/tOISAP97_dk" title="Marriage DAO 💍 Miami Hack Week 🌴" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <a href={'https://github.com/Zernach/marriage-dao-mobile'}>
+                        <img className="gif" src={'https://github.com/Zernach/zernach.github.io/blob/master/images/marriage-dao-demo-gif-expo-react-native-walletconnect.gif?raw=true'} alt={'marriageDAO'} style={{ marginBottom: '5%', marginTop: 0 }} />
+                    </a>
+                </div>
+            </div>
             <Footer />
         </div>
     );
