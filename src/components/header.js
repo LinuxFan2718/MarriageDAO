@@ -19,13 +19,16 @@ export const Header = () => {
                         {"MARRIAGE DAO"}
                     </h1>
                     <h3 className="subtitle" style={{ color: '#ffffff' }}>
-                        <i>{'Improving Marriage with the Blockchain'}</i>
+                        <i>{'Make Your Marriage Official on the Blockchain'}</i>
                     </h3>
                 </div>
                 <div className={'headerSection'}>
                     <img src={require('../assets/stem_icons_dark.png')} className="app-icon" alt="app-icon" style={{}} />
                 </div>
                 <div className={'headerSection'}>
+                    <h3 className="subtitle" style={{ color: '#ffffff' }}>
+                        <i>{'Agree to a contract with your spouse. This blockchain contract crosses state/country lines, unlike traditional prenuptual agreements.'}</i>
+                    </h3>
                 </div>
             </div>
         </header>
