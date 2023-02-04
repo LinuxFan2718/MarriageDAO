@@ -99,6 +99,12 @@ code {
   }
 }
 
+@media (max-width:640px) {
+  .descriptiontext {
+    font-size: small
+  }
+}
+
 .techNetwork {
   color: #fff;
   margin-top: -5vh;

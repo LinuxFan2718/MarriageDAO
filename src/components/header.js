@@ -26,7 +26,7 @@ export const Header = () => {
                     <img src={require('../assets/stem_icons_dark.png')} className="app-icon" alt="app-icon" style={{}} />
                 </div>
                 <div className={'headerSection'}>
-                    <h3 className="subtitle" style={{ color: '#ffffff' }}>
+                    <h3 className="descriptiontext" style={{ color: '#ffffff' }}>
                         <i>{'Agree to a contract with your spouse. This blockchain contract crosses state/country lines, unlike traditional prenuptual agreements.'}</i>
                     </h3>
                 </div>
